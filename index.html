@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>  
+    
+    <header>
+      <h1 id="title">
+        Winnie the Pooh Survey
+      </h1>
+      <p id="description">
+        An investigation into public opinion on Winnie the Pooh
+      </p>
+    </header>
+    <form 
+         id="survey-form" 
+         class="container">
+      <div 
+         class="form-group">
+        <label 
+          for="name" 
+          id="name-label">Name
+        </label>
+      <input type="text" id="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Email address" required>
+     </div>
+     <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" placeholder="Your age" min="1" max="100" required>
+     </div>
+     <div class="form-group"
+          
+      <label for="dropdown" id="dropdown-label">How old is Winnie the Pooh?</label>
+      <select id="dropdown">
+        <option value="under-18">Under 18</option>
+        <option value="18-30">Young Adult (18-29)</option>
+        <option value="30-50">Middle Aged (30-50)</option>
+        <option value="50-70">50-70</option>
+        <option value="70+">70+</option>
+        <option value="Ageless">He exists outside of the dimensions of time and space is thus ageless</option>
+      </select>
+      </div>
+    
+      <div class="form-group">
+      <fieldset id="weight-fieldset">
+        <legend>Into which weight category would you place Winnie the Pooh?</legend>
+        <label for="healthy-weight">
+        <input type="radio" id="healthy-weight" name="weight" value="healthy-weight" class="input-radio">Healthy Weight</label>  
+        <label for="overweight">
+        <input type="radio" id="overweight" name="weight" value="overweight" class="input-radio">Overweight</label>
+        <label for="obese">
+        <input type="radio" id="obese" name="weight" value="obese" class="input-radio">Obese</label>
+      </fieldset>
+    </div>
+    <div class="form-group">
+      <fieldset id="personality-fieldset">
+        <legend>How would you describe Winnie the Pooh (select all that apply)?</legend>
+        <label for="kind">
+        <input type="checkbox" id="kind" name="personality" value="kind" class="input-checkbox">Kind</label>
+        <label for="greedy">
+        <input type="checkbox" id="greedy" name="personality" value="greedy" class="input-checkbox">Greedy</label>
+        <label for="stupid">
+        <input type="checkbox" id="stupid" name="personality" value="stupid" class="input-checkbox">Stupid</label>
+        <label for="loyal">
+        <input type="checkbox" id="loyal" name="personality" value="loyal" class="input-checkbox">Loyal</label>
+        <label for="fun">
+        <input type="checkbox" id="fun" name="personality" value="fun" class="input-checkbox">Fun</label>
+      </fieldset>
+    </div>
+    <div class="form-group">
+      <fieldset id="naked-fieldset">
+        <legend>Is Winnie the Pooh naked from the waist down?</legend>
+        <label for="no">
+        <input type="radio" name="naked" id="no" value="no" class="input-radio">No, his fur covers him.</label>
+        <label for="yes">
+        <input type="radio" name="naked" id="yes" value="yes" class="input-radio">Yes, he's only wearing a shirt</label>
+      </fieldset
+    </div>
+        
+    <div class="form-group">
+      <label for="comments">Additional comments</label>
+      <textarea id="comments"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit">Submit</button>
+    </div>
+    </form>
+
+
+</html>
