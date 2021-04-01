@@ -21,6 +21,7 @@
     font-family: "Libre Baskerville";
     border-radius: 20px;
     max-width: 100%;
+    padding-top: 5px;
   }
   
   /*@media (max-width: 1000px) {
